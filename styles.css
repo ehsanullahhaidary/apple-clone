@@ -24,7 +24,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: none;
 }
 
 /*
@@ -42,14 +41,6 @@ body {
   background-color: var(--body--background--color);
   height: 100%;
   font-family: Roboto, Arial, sans-serif;
-
-  /* text not to be selectable */
-  -webkit-user-select: none;
-  /* Safari */
-  -ms-user-select: none;
-  /* IE 10 and IE 11 */
-  user-select: none;
-  /* Standard syntax */
 }
 
 /*
@@ -129,7 +120,7 @@ h6 {
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .header .header__icons .header__icons--icon {
@@ -188,12 +179,239 @@ h6 {
   margin-top: 3px;
 }
 
-/* .main-section {
+.main-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 160px;
-} */
+  padding-top: 158px;
+}
+
+.main-section .main-section-fitness {
+  content: url(https://www.apple.com/v/home/takeover/f/images/overview/reveal/section_apple_fitness_plus_logo__fxdzla5fq5ui_small.png);
+}
+
+.main-section .main-section__heading {
+  text-align: center;
+  font-size: 45px;
+  line-height: normal;
+  color: var(--body--text-dark--color);
+  margin: 14px 0;
+}
+.main-section .main-section__heading:nth-of-type(2) {
+  display: none;
+  font-size: 62px;
+}
+
+.main-section .main-section__heading:nth-of-type(3) {
+  display: none;
+  margin-top: 24px;
+  font-size: 75px;
+}
+
+.main-section .main-section__buttons {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.main-section .main-section__buttons .main-section__buttons--button {
+  width: 210px;
+  height: 44px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main-section .main-section__buttons .main-section__buttons--button span {
+  font-size: 10px;
+  margin-top: -7px;
+  font-weight: 500;
+}
+.main-section
+  .main-section__buttons
+  .main-section__buttons--button:first-of-type {
+  color: var(--white--color);
+  background-color: var(--body--left-button--color);
+  font-weight: 700;
+}
+.main-section
+  .main-section__buttons
+  .main-section__buttons--button:last-of-type {
+  color: var(--body--text-dark--color);
+  background-color: var(--body--right-button--color);
+  font-weight: 500;
+}
+.main-section
+  .main-section__buttons
+  .main-section__buttons--button:first-of-type:hover {
+  background-color: var(--body--left-button--hover--color);
+}
+.main-section
+  .main-section__buttons
+  .main-section__buttons--button:last-of-type:hover {
+  background-color: var(--body--right-button--hover--color);
+}
+
+.main-section-two-phones {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-top: 60px;
+  content: url(https://www.apple.com/v/home/takeover/f/images/overview/reveal/2up_device__bj78k7ur5s82_small.jpg);
+}
+
+.main-section .main-section__description-text {
+  line-height: 1.2;
+  margin-top: 50px;
+  text-align: center;
+  color: var(--body--text-dark--color);
+  font-weight: 500;
+  font-size: 21px;
+  word-spacing: 0.3px;
+}
+.main-section .main-section__description-text:nth-of-type(2) {
+  font-size: 21px;
+  display: none;
+}
+
+.main-section .main-section__description-text:nth-of-type(3) {
+  font-size: 24px;
+  display: none;
+  word-spacing: 0;
+}
+
+.main-section .main-section__icons-with-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+  gap: 40px;
+}
+
+.main-section
+  .main-section__icons-with-text
+  .main-section__icons-with-text--first-icon,
+.main-section
+  .main-section__icons-with-text
+  .main-section__icons-with-text--second-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main-section
+  .main-section__icons-with-text
+  .main-section__icons-with-text--first-icon
+  .main-section__icons-with-text--first-icon--icon {
+  content: url(https://www.apple.com/v/home/takeover/f/images/overview/reveal/fitness_circle_icon__gmm44sdrs22y_large.png);
+}
+.main-section
+  .main-section__icons-with-text
+  .main-section__icons-with-text--second-icon
+  .main-section__icons-with-text--second-icon--icon {
+  content: url(https://www.apple.com/v/home/takeover/f/images/overview/reveal/sharing_icon__c4oolkwx2uoi_large.png);
+}
+
+.main-section
+  .main-section__icons-with-text
+  .main-section__icons-with-text--first-icon
+  .main-section__icons-with-text--first-icon--text,
+.main-section
+  .main-section__icons-with-text
+  .main-section__icons-with-text--second-icon
+  .main-section__icons-with-text--second-icon--text {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: normal;
+  color: var(--body--icons-next-text--color);
+  word-spacing: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-section
+  .main-section__icons-with-text
+  .main-section__icons-with-text--second-icon
+  .main-section__icons-with-text--second-icon--text
+  span {
+  font-size: 10px;
+  margin-top: 9px;
+  margin-left: -3px;
+  font-weight: 900;
+}
+
+@media (min-width: 734px) {
+  .main-section {
+    padding-top: 208px;
+  }
+
+  .main-section .main-section-fitness {
+    content: url(https://www.apple.com/v/home/takeover/f/images/overview/reveal/section_apple_fitness_plus_logo__fxdzla5fq5ui_large.png);
+  }
+
+  .main-section .main-section__heading:nth-of-type(2) {
+    display: block;
+  }
+  .main-section .main-section__heading:first-of-type {
+    display: none;
+  }
+
+  .main-section .main-section__buttons {
+    margin-top: 8px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+  .main-section
+    .main-section__buttons
+    .main-section__buttons--button:first-of-type {
+    width: 231px;
+  }
+  .main-section
+    .main-section__buttons
+    .main-section__buttons--button:last-of-type {
+    width: 200px;
+  }
+
+  .main-section .main-section__buttons .main-section__buttons--button {
+    height: 57px;
+    border-radius: 40px;
+  }
+
+  .main-section-two-phones {
+    content: url(https://www.apple.com/v/home/takeover/f/images/overview/reveal/2up_device__bj78k7ur5s82_medium.jpg);
+  }
+
+  .main-section .main-section__description-text:nth-of-type(1) {
+    display: none;
+  }
+
+  .main-section .main-section__description-text:nth-of-type(2) {
+    display: block;
+  }
+
+  .main-section .main-section__icons-with-text {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 60px;
+    margin-top: 60px;
+  }
+
+  .main-section
+    .main-section__icons-with-text
+    .main-section__icons-with-text--first-icon,
+  .main-section
+    .main-section__icons-with-text
+    .main-section__icons-with-text--second-icon {
+    flex-direction: row;
+  }
+}
 
 @media (min-width: 830px) {
   .header {
@@ -209,5 +427,34 @@ h6 {
   }
   .header .header__icons .header__icons--apple-icon {
     margin-right: 20px;
+  }
+  .main-section {
+    padding-top: 204px;
+  }
+}
+
+@media (min-width: 1052px) {
+  .main-section .main-section__heading:nth-of-type(2) {
+    display: none;
+  }
+
+  .main-section .main-section__heading:nth-of-type(3) {
+    display: block;
+  }
+
+  .main-section .main-section__buttons {
+    gap: 40px;
+  }
+
+  .main-section-two-phones {
+    content: url(https://www.apple.com/v/home/takeover/f/images/overview/reveal/2up_device__bj78k7ur5s82_large.jpg);
+  }
+
+  .main-section .main-section__description-text:nth-of-type(2) {
+    display: none;
+  }
+
+  .main-section .main-section__description-text:nth-of-type(3) {
+    display: block;
   }
 }
