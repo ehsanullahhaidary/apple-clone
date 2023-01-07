@@ -2,6 +2,7 @@
 :root {
   --white--color: #ffffff;
   --header--color: #333333;
+  --footer-background--color: #f5f5f7;
   --header--icons-text--color: #f5f5f7;
   --header--icons-text--hover--color: #ffffff;
   --body--text-dark--color: #1d1d1f;
@@ -13,6 +14,8 @@
   --body--icons-next-text--color: #868b8b;
   --body--description--text--color: #6e6e73;
   --links--color: #3a6acc;
+  --iphone--background--color: #fbfbfd;
+  --footer--description--text--color: #838383;
 }
 
 /* CSS Reset Starts */
@@ -111,8 +114,10 @@ h6 {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  z-index: 2;
 }
 
+/* header icons div */
 .header .header__icons {
   height: 100%;
   width: 1050px;
@@ -123,6 +128,7 @@ h6 {
   padding: 0 10px;
 }
 
+/* header icons */
 .header .header__icons .header__icons--icon {
   display: flex;
   align-items: center;
@@ -133,6 +139,7 @@ h6 {
   cursor: pointer;
 }
 
+/* header svgs */
 .header .header__icons .header__icons--icon svg {
   min-width: 15px;
   max-width: 15px;
@@ -143,6 +150,7 @@ h6 {
   fill: var(--header--icons-text--hover--color);
 }
 
+/* header middle links */
 .header .header__icons .header__icons--middle-links {
   display: none;
   flex-grow: 1;
@@ -153,6 +161,7 @@ h6 {
   margin: 0 10px;
 }
 
+/* every link in header */
 .header
   .header__icons
   .header__icons--middle-links
@@ -179,6 +188,7 @@ h6 {
   margin-top: 3px;
 }
 
+/* main section setup */
 .main-section {
   display: flex;
   flex-direction: column;
@@ -186,6 +196,7 @@ h6 {
   padding-top: 158px;
 }
 
+/* main section fitness picture */
 .main-section .main-section-fitness {
   content: url(https://www.apple.com/v/home/takeover/f/images/overview/reveal/section_apple_fitness_plus_logo__fxdzla5fq5ui_small.png);
 }
@@ -208,6 +219,7 @@ h6 {
   font-size: 75px;
 }
 
+/* two buttons in middle of main section */
 .main-section .main-section__buttons {
   margin-top: 8px;
   display: flex;
@@ -215,6 +227,8 @@ h6 {
   gap: 25px;
   align-items: center;
 }
+
+/* main section buttons */
 .main-section .main-section__buttons .main-section__buttons--button {
   width: 210px;
   height: 44px;
@@ -256,6 +270,7 @@ h6 {
   background-color: var(--body--right-button--hover--color);
 }
 
+/* two phones link */
 .main-section-two-phones {
   flex-grow: 0;
   flex-shrink: 0;
@@ -263,6 +278,7 @@ h6 {
   content: url(https://www.apple.com/v/home/takeover/f/images/overview/reveal/2up_device__bj78k7ur5s82_small.jpg);
 }
 
+/* a little description about fitness */
 .main-section .main-section__description-text {
   line-height: 1.2;
   margin-top: 50px;
@@ -283,6 +299,7 @@ h6 {
   word-spacing: 0;
 }
 
+/* two icons with text in main section */
 .main-section .main-section__icons-with-text {
   display: flex;
   flex-direction: column;
@@ -291,6 +308,7 @@ h6 {
   gap: 40px;
 }
 
+/* two icons  */
 .main-section
   .main-section__icons-with-text
   .main-section__icons-with-text--first-icon,
@@ -304,6 +322,7 @@ h6 {
   gap: 20px;
 }
 
+/* two icons image link */
 .main-section
   .main-section__icons-with-text
   .main-section__icons-with-text--first-icon
@@ -317,6 +336,7 @@ h6 {
   content: url(https://www.apple.com/v/home/takeover/f/images/overview/reveal/sharing_icon__c4oolkwx2uoi_large.png);
 }
 
+/* two icons text */
 .main-section
   .main-section__icons-with-text
   .main-section__icons-with-text--first-icon
@@ -346,6 +366,310 @@ h6 {
   font-weight: 900;
 }
 
+/* iphone 14 and 14 pro sections */
+.main-section .main-section__iphone-watch {
+  background-color: var(--white--color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 15px 0;
+  gap: 15px;
+  margin-top: 110px;
+}
+.main-section .main-section__iphone-watch .main-section__iphone-watch--iphone,
+.main-section .main-section__iphone-watch .main-section__iphone-watch--watch {
+  cursor: pointer;
+  max-width: 100%;
+  position: relative;
+  justify-content: center;
+}
+
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--iphone
+  .main-section__iphone-watch--iphone--top-part,
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--watch
+  .main-section__iphone-watch--watch--top-part {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--iphone
+  .main-section__iphone-watch--iphone--top-part
+  .main-section__iphone-watch--iphone--h1 {
+  margin-top: 30px;
+  color: var(--body--text-dark--color);
+}
+
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--watch
+  .main-section__iphone-watch--watch--top-part
+  .main-section__iphone-watch--watch--h1 {
+  margin-top: 30px;
+  color: var(--header--icons-text--color);
+}
+
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--iphone
+  .main-section__iphone-watch--iphone--top-part
+  .main-section__iphone-watch--iphone--p {
+  font-size: 18px;
+  color: var(--body--text-dark--color);
+  font-weight: 400;
+}
+
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--watch
+  .main-section__iphone-watch--watch--top-part
+  .main-section__iphone-watch--watch--p {
+  font-size: 18px;
+  color: var(--header--icons-text--color);
+  font-weight: 400;
+}
+
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--iphone
+  .main-section__iphone-watch--iphone--top-part
+  .main-section__iphone-watch--iphone--links,
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--watch
+  .main-section__iphone-watch--watch--top-part
+  .main-section__iphone-watch--watch--links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--iphone
+  .main-section__iphone-watch--iphone--top-part
+  .main-section__iphone-watch--iphone--links
+  .main-section__iphone-watch--iphone--links--link,
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--watch
+  .main-section__iphone-watch--watch--top-part
+  .main-section__iphone-watch--watch--links
+  .main-section__iphone-watch--watch--links--link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 3px;
+}
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--iphone
+  .main-section__iphone-watch--iphone--top-part
+  .main-section__iphone-watch--iphone--links
+  .main-section__iphone-watch--iphone--links--link
+  a,
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--watch
+  .main-section__iphone-watch--watch--top-part
+  .main-section__iphone-watch--watch--links
+  .main-section__iphone-watch--watch--links--link
+  a {
+  color: var(--links--color);
+  font-size: 17px;
+  text-decoration: none;
+}
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--iphone
+  .main-section__iphone-watch--iphone--top-part
+  .main-section__iphone-watch--iphone--links
+  .main-section__iphone-watch--iphone--links--link:hover
+  a,
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--watch
+  .main-section__iphone-watch--watch--top-part
+  .main-section__iphone-watch--watch--links
+  .main-section__iphone-watch--watch--links--link:hover
+  a {
+  text-decoration: underline;
+}
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--iphone
+  .main-section__iphone-watch--iphone--top-part
+  .main-section__iphone-watch--iphone--links
+  .main-section__iphone-watch--iphone--links--link
+  code,
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--watch
+  .main-section__iphone-watch--watch--top-part
+  .main-section__iphone-watch--watch--links
+  .main-section__iphone-watch--watch--links--link
+  code {
+  color: var(--links--color);
+  font-size: 19px;
+  margin-top: -2px;
+}
+
+/* iphone 14 image link */
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--iphone
+  .main-section__iphone-watch--iphone--img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  content: url(https://www.apple.com/in/home/heroes/iphone-14/images/hero_iphone14_preorder__c4g2wjzuugqe_small.jpg);
+}
+
+/* iphone 14 pro image link */
+.main-section
+  .main-section__iphone-watch
+  .main-section__iphone-watch--watch
+  .main-section__iphone-watch--watch--img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  content: url(https://www.apple.com/v/home/aw/images/heroes/iphone-14-pro/hero_iphone14pro__e5xbgo5ffhg2_small.jpg);
+}
+
+/* footer part starts */
+.main-section .footer {
+  padding: 15px;
+  width: 100%;
+  background-color: var(--footer-background--color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--footer--description--text--color);
+}
+
+/* footer description text */
+.main-section .footer .footer__description {
+  font-size: 13px;
+  margin: 0;
+  padding: 5px;
+  line-height: 1.1;
+  max-width: 1000px;
+}
+
+.main-section .footer .footer__description:last-of-type {
+  margin-bottom: 10px;
+}
+
+/* footer horizintal lines */
+.footer .footer__horozontal-line {
+  width: calc(100% - 10px);
+  height: 1px;
+  background-color: #cacaca;
+  margin: 7px 0;
+  max-width: 1000px;
+}
+
+.footer .footer__link {
+  cursor: pointer;
+  width: calc(100% - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  max-width: 1000px;
+}
+
+.footer .footer__link:hover {
+  color: black;
+}
+
+.footer .footer__link p:last-of-type {
+  margin-right: 7px;
+}
+
+/* privacy part in footer */
+.footer .footer__last-div {
+  width: calc(100% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 1000px;
+}
+.footer .footer__last-div p:first-of-type {
+  font-size: 12px;
+  width: 100%;
+}
+.footer .footer__last-div p:first-of-type span {
+  cursor: pointer;
+  color: var(--links--color);
+}
+
+.footer .footer__last-div p:first-of-type span:hover {
+  text-decoration: underline;
+}
+.footer .footer__last-div .footer__horozontal-line {
+  display: none;
+}
+
+.footer .footer__last-div .footer__last-div--copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.footer .footer__last-div .footer__last-div--copyright p {
+  width: auto;
+  white-space: nowrap;
+}
+.footer
+  .footer__last-div
+  .footer__last-div--copyright
+  .footer__last-div--copyright--privacy {
+  width: 100%;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.footer
+  .footer__last-div
+  .footer__last-div--copyright
+  .footer__last-div--copyright--privacy
+  p {
+  font-size: 13px;
+  width: auto;
+  margin: 2px;
+  padding: 0;
+  flex-grow: 0;
+  color: #6e6e73;
+}
+
+.footer
+  .footer__last-div
+  .footer__last-div--copyright
+  .footer__last-div--copyright--privacy
+  .footer__last-div--copyright--privacy--line {
+  min-width: 1px;
+  align-self: center;
+  min-height: 15px;
+  background-color: #cacaca;
+  margin: 0 5px;
+}
+
+/* setup some icons , images and styles  at this size */
 @media (min-width: 734px) {
   .main-section {
     padding-top: 208px;
@@ -411,8 +735,31 @@ h6 {
     .main-section__icons-with-text--second-icon {
     flex-direction: row;
   }
+
+  .main-section .main-section__iphone-watch {
+    flex-direction: row;
+    align-items: stretch;
+    padding: 12px;
+    gap: 12px;
+    margin-top: 110px;
+  }
+  .main-section
+    .main-section__iphone-watch
+    .main-section__iphone-watch--iphone
+    .main-section__iphone-watch--iphone--img {
+    height: 500px;
+    object-fit: cover;
+  }
+  .main-section
+    .main-section__iphone-watch
+    .main-section__iphone-watch--watch
+    .main-section__iphone-watch--watch--img {
+    height: 500px;
+    object-fit: cover;
+  }
 }
 
+/* setup some icons , images and styles  at this size */
 @media (min-width: 830px) {
   .header {
     height: 44px;
@@ -431,8 +778,33 @@ h6 {
   .main-section {
     padding-top: 204px;
   }
+
+  .main-section
+    .main-section__iphone-watch
+    .main-section__iphone-watch--iphone
+    .main-section__iphone-watch--iphone--img {
+    content: url(https://www.apple.com/in/home/heroes/iphone-14/images/hero_iphone14_preorder__c4g2wjzuugqe_medium.jpg);
+  }
+
+  .main-section
+    .main-section__iphone-watch
+    .main-section__iphone-watch--watch
+    .main-section__iphone-watch--watch--img {
+    content: url(https://www.apple.com/v/home/aw/images/heroes/iphone-14-pro/hero_iphone14pro__e5xbgo5ffhg2_medium.jpg);
+  }
+
+  .footer .footer__last-div .footer__last-div--copyright {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer .footer__last-div .footer__horozontal-line {
+    display: block;
+  }
 }
 
+/* setup some icons , images and styles  at this size */
 @media (min-width: 1052px) {
   .main-section .main-section__heading:nth-of-type(2) {
     display: none;
@@ -456,5 +828,32 @@ h6 {
 
   .main-section .main-section__description-text:nth-of-type(3) {
     display: block;
+  }
+
+  .main-section
+    .main-section__iphone-watch
+    .main-section__iphone-watch--iphone
+    .main-section__iphone-watch--iphone--img {
+    content: url(https://www.apple.com/in/home/heroes/iphone-14/images/hero_iphone14_preorder__c4g2wjzuugqe_large.jpg);
+  }
+
+  .main-section
+    .main-section__iphone-watch
+    .main-section__iphone-watch--watch
+    .main-section__iphone-watch--watch--img {
+    content: url(https://www.apple.com/v/home/aw/images/heroes/iphone-14-pro/hero_iphone14pro__e5xbgo5ffhg2_large.jpg);
+  }
+
+  .main-section
+    .main-section__iphone-watch
+    .main-section__iphone-watch--iphone
+    .main-section__iphone-watch--iphone--img {
+    height: 580px;
+  }
+  .main-section
+    .main-section__iphone-watch
+    .main-section__iphone-watch--watch
+    .main-section__iphone-watch--watch--img {
+    height: 580px;
   }
 }
