@@ -1,5 +1,5 @@
 # apple-clone
 
-## Local host
+## Live host
 
 https://apple-clone-ehsan.vercel.app/
